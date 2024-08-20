@@ -10,7 +10,6 @@ export default function HomePage() {
         <ul>
           <li><Link href="/generate">Generate Flashcards</Link></li>
           <li><Link href="/flashcards">View Saved Flashcards</Link></li>
-          <li><Link href="/about">About This App</Link></li>
         </ul>
       </nav>
     </div>

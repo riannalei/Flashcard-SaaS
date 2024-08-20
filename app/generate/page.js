@@ -16,7 +16,12 @@ export default function Generate() {
     try {
       const response = await fetch('/api/generate', {
         method: 'POST',
-        body: text,
+        headers: {
+          'Content-Type': 'application/json'  // Set the correct content type
+        },
+        body: JSON.stringify({
+          text: text  // Send the text wrapped in a JSON object
+        }),
       });
 
       if (!response.ok) {
@@ -24,7 +29,7 @@ export default function Generate() {
       }
 
       const data = await response.json();
-      setFlashcards(data);
+      setFlashcards(data.flashcards);  // Ensure you access the correct part of the response
     } catch (error) {
       console.error('Error generating flashcards:', error);
       alert('An error occurred while generating flashcards. Please try again.');

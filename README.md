@@ -27,6 +27,6 @@ The easiest way to deploy your Next.js application is to use Vercel. Check out t
 - Next.js Documentation - Learn about Next.js features and API.
 - Learn Next.js - An interactive Next.js tutorial.
 
-## About
+## License
 
-Flashcard-SaaS is a learning tool built with Next.js and powered by OpenAI that helps users create, manage, and review flashcards for effective study sessions.
+This project is licensed under the MIT License - see the LICENSE file for details.
